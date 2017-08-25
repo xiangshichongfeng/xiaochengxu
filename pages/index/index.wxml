@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="menu">
+  <!-- 顶部导航条 -->
+  <view class="topBanner">
+    <view class="tLeft"></view>
+    <view class="tRight">发菜谱</view>
+    <view class="tMiddle">
+      <view class="tList">
+        <view class='list'  wx:for="{{ topBarList }}"  data-idx="{{index}}" wx:key= "{{ unique }}"  bindtap="menuTap">
+          {{ item.title }}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 顶部导航条的相应展示 -->
+  <!-- 首页  -->
+  <view class="listshow {{currentIdx == 0 ? 'active' : ''}}" >123</view>
+  <!-- 上菜  -->
+  <view class="listshow {{currentIdx == 1 ? 'active' : ''}}" >456</view>
+  <!-- 分类  -->
+  <view class="listshow {{currentIdx == 2 ? 'active' : ''}}" >789</view>
+  <!-- 食材  -->
+  <view class="listshow {{currentIdx == 3 ? 'active' : ''}}" >abc</view>
+</view>
