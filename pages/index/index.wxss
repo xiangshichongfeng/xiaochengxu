@@ -1,5 +1,5 @@
 /**index.wxss**/
-/* 顶部导航的样式  */
+/* 顶部导航的样式开始  */
 .topBanner{
   width:100%;
   height:40px;
@@ -53,9 +53,95 @@
 }
 .menu .listshow{
     display:none;  
+    position:relative;
 }
 .menu .listshow.active{
   display:block;
 }
+/* 顶部导航样式结束  */
 
-
+/* 首页的样式开始  */
+/* 顶部搜索  */
+.shouyeSearch{
+  width:100%;
+  height:45px;
+  padding:7px 10px;
+  box-sizing:border-box;
+  overflow: hidden;
+  position:absolute;
+  top:0px;
+  left:0px;
+  color:#aaa;
+}
+.shouyeSearch .SearchLeft{
+  width:70%;
+  height:30px;  
+  border-radius: 40px;
+  border:1px solid #eee;
+  margin-right:10px;
+  float:left;
+}
+.shouyeSearch .SearchLeft .searchIcon{
+  width:70%;
+  height:100%;
+  font-size:12px;
+  line-height:30px;
+  position:relative;
+  top:0px;
+  left:0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  box-sizing:border-box;
+  overflow: hidden;
+}
+.shouyeSearch .SearchLeft .searchIcon icon {
+  position:absolute;
+  top:7px;
+  left:5px;
+}
+.shouyeSearch .SearchLeft .searchIcon .detail{
+  width:100%;
+  float:left;
+  margin-left:15px;
+  text-align: center;
+}
+.shouyeSearch .SearchRight{
+  width:25%;
+  height:30px;  
+  border-radius: 40px;
+  border:1px solid #eee;
+  float:left;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+/* 轮播图  */
+.swiper {
+  width: 100%;
+  height:150px;
+  position:absolute;
+  top:47px;
+  left:0px;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+/* 热搜的模块 */
+.hotSearch{
+  width:100%;
+  height:90px;
+  border:1px solid #aaa;
+  position:absolute;
+  top:200px;
+  left:0px;
+}
+.hotSearch .hotSearchList{
+  width:20%;
+  height:100%;
+  border:1px solid #ff6767;
+  box-sizing:border-box;
+  float: left;
+}
+.hotSearch .hotSearchList .icon{}

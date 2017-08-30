@@ -1,48 +1,46 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/index/shouye/shouye",    
-    "pages/topic/topic",
-    "pages/collect/collect",
-    "pages/user/user",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "菜谱",
-        "iconPath":"images/icon/menu.png",
-        "selectedIconPath":"images/icon/menu-active.png"
-       
-      },
-      {
-        "pagePath": "pages/topic/topic",
-        "text": "话题",
-        "iconPath": "images/icon/topic.png",
-        "selectedIconPath": "images/icon/topic-active.png"
-      },
-      {
-        "pagePath": "pages/collect/collect",
-        "text": "珍选",
-        "iconPath": "images/icon/collect.png",
-        "selectedIconPath": "images/icon/collect-active.png"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "我的",
-        "iconPath": "images/icon/user.png",
-        "selectedIconPath": "images/icon/user-active.png"
-      }
+    "pages": [
+        "pages/index/index",
+        "pages/topic/topic",
+        "pages/collect/collect",
+        "pages/user/user",
+        "pages/logs/logs"
     ],
-    "color": "#000",
-    "selectedColor": "#ff6767",
-    "borderStyle": "#ccc"
-  }
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "菜谱",
+                "iconPath": "images/icon/menu.png",
+                "selectedIconPath": "images/icon/menu-active.png"
+
+            },
+            {
+                "pagePath": "pages/topic/topic",
+                "text": "话题",
+                "iconPath": "images/icon/topic.png",
+                "selectedIconPath": "images/icon/topic-active.png"
+            },
+            {
+                "pagePath": "pages/collect/collect",
+                "text": "珍选",
+                "iconPath": "images/icon/collect.png",
+                "selectedIconPath": "images/icon/collect-active.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "images/icon/user.png",
+                "selectedIconPath": "images/icon/user-active.png"
+            }
+        ],
+        "color": "#000",
+        "selectedColor": "#ff6767",
+        "borderStyle": "#ccc"
+    }
 }

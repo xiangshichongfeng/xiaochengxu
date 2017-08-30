@@ -14,9 +14,36 @@
   </view>
   <!-- 顶部导航条的相应展示 -->
   <!-- 首页  -->
-  <view class="listshow {{currentIdx == 0 ? 'active' : ''}}" >123</view>
+  <view class="listshow clearfix {{currentIdx == 0 ? 'active' : ''}}" >
+    <!-- 首页搜索  -->
+    <view class="shouyeSearch">
+      <view class="SearchLeft">
+        <view class="searchIcon">
+          <icon type="search" size="12" />
+          <view class="detail one_txt_cut">搜索菜谱、食材或菜单...</view>
+        </view>
+      </view>
+      <view class="SearchRight">今日签到</view>      
+    </view>
+    <!-- 首页轮播  -->
+    <swiper class="swiper" indicator-dots="true" current="0" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{slides}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>
+  <!-- 首页小icon  -->
+  <!-- <view class="hotSearch">
+    <view class='hotSearchList'  wx:for="{{ hotSearch }}"  wx:key= "{{ unique }}">
+          <view class="icon"></view>
+    </view>
+  </view> -->
+  </view>
   <!-- 上菜  -->
-  <view class="listshow {{currentIdx == 1 ? 'active' : ''}}" >456</view>
+  <view class="listshow {{currentIdx == 1 ? 'active' : ''}}" >
+  456
+  </view>
   <!-- 分类  -->
   <view class="listshow {{currentIdx == 2 ? 'active' : ''}}" >789</view>
   <!-- 食材  -->
