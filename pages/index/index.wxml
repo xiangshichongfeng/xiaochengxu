@@ -27,18 +27,32 @@
     </view>
     <!-- 首页轮播  -->
     <swiper class="swiper" indicator-dots="true" current="0" autoplay="true" interval="5000" duration="1000">    
-      <block wx:for="{{slides}}" wx:for-index="index">    
+      <block wx:for="{{slides}}" wx:for-index="index"  wx:key= "{{ unique }}">    
         <swiper-item>    
           <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
         </swiper-item>    
       </block>    
     </swiper>
-  <!-- 首页小icon  -->
-  <!-- <view class="hotSearch">
-    <view class='hotSearchList'  wx:for="{{ hotSearch }}"  wx:key= "{{ unique }}">
-          <view class="icon"></view>
+    <!-- 首页热搜部分  -->
+    <view class="hotSearch">
+      <view class='hotSearchList'  wx:for="{{ hotSearch }}"  wx:key= "{{ unique }}"> 
+        <view class="icon"></view>
+        <view class="title">{{ item.title }}</view>
+      </view>
+    </view> 
+    <!-- 首页的竖状的轮播图  -->
+    <view class="verticalslide">
+      <view class="verticalList" wx:for="{{ VerticalSlide }}"  wx:key= "{{ unique }}">
+        <!-- <view class="titlepic" style="background:url("+item.url")"></view> -->
+        <image class="titlepic" src="{{ item.url }}"></image>
+        <view class="titledetail">
+          <view class="titledetailTop">{{ item.detail }}</view>
+          <view class="titledetailBottom">
+            <view class="title">{{ item.title }}</view>
+          </view>
+        </view>
+      </view>
     </view>
-  </view> -->
   </view>
   <!-- 上菜  -->
   <view class="listshow {{currentIdx == 1 ? 'active' : ''}}" >

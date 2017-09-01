@@ -6,6 +6,7 @@
   background-color: #ff6767;
   padding:0;
   margin:0;
+  overflow: hidden;
 }
 .topBanner .tLeft{
   width:40px;
@@ -132,7 +133,7 @@
 .hotSearch{
   width:100%;
   height:90px;
-  border:1px solid #aaa;
+  /* border:1px solid #aaa; */
   position:absolute;
   top:200px;
   left:0px;
@@ -140,8 +141,115 @@
 .hotSearch .hotSearchList{
   width:20%;
   height:100%;
-  border:1px solid #ff6767;
+  /* border:1px solid #ff6767; */
   box-sizing:border-box;
   float: left;
+  position:relative;
 }
-.hotSearch .hotSearchList .icon{}
+.hotSearch .hotSearchList .icon{
+  width:30px;
+  height:30px;
+  background-color: red;
+  position:absolute;
+  top:-15px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  margin:auto;
+  background: url(http://static.meishichina.com/v6/img/wap_a/icon.png) no-repeat;
+  background-size: 150px auto;
+}
+.hotSearch .hotSearchList:nth-child(2) .icon{
+    background-position: -30px 0;
+}
+.hotSearch .hotSearchList:nth-child(3) .icon{
+    background-position: -60px 0;
+}
+.hotSearch .hotSearchList:nth-child(4) .icon{
+    background-position: -90px 0;
+}
+.hotSearch .hotSearchList:nth-child(5) .icon{
+    background-position: -120px 0;
+}
+.hotSearch .hotSearchList .title{
+  width:100%;
+  height:20px;
+  font-size:12px;
+  text-align: center;
+  position:absolute;
+  top:60px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  margin:auto;
+}
+/* 竖形轮播图  */
+.verticalslide{
+  width:100%;
+  height:80px;
+  overflow: hidden;  
+  /* height:60px; */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;  
+  position:absolute;
+  top:300px;
+  left:10px;
+}
+.verticalslide .verticalList{
+  width:100%;
+  height:80px;
+  padding:10px 0px;
+  box-sizing: border-box;
+  /* transform: translateZ(80px) */
+  animation: loop 10s linear infinite;
+}
+@keyframes loop {
+    0% {transform: translate(0px);}
+    15% {transform: translate(0px);}
+
+    20% {transform: translateY(-80px);} 
+    35% {transform: translateY(-80px);}
+
+    40% {transform: translateY(-160px);}
+    55% {transform: translateY(-160px);}    
+
+    60% {transform: translateY(-240px);}
+    75% {transform: translateY(-240px);}
+
+    80% {transform: translateY(-320px);}
+    95% {transform: translateY(-320px);}    
+
+    100% {transform: translateY(-400px);} 
+}
+.verticalslide .verticalList .titlepic{
+  width:60px;
+  height:60px;
+  background-color: #def;
+  float:left;
+}
+.verticalslide .verticalList .titledetail{
+  /* width:100%; */
+  height:100%;
+  margin-left:70px;
+  /* background:pink; */
+}
+.verticalslide .verticalList .titledetail .titledetailTop{
+  width:100%;
+  height: 50%;
+  line-height: 40px;
+  font-size: 16px;
+  color: #111;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrapper;
+}
+.verticalslide .verticalList .titledetail .title{
+  width:100%;
+  height: 50%;
+  line-height: 30px;
+  font-size: 12px;
+  color: #111;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrapper;
+}
